@@ -1,0 +1,152 @@
+.container {
+  max-width:970px;
+  margin:0 auto;
+  padding: 20px 15px;
+}
+nav {
+  background:brown;
+}
+
+nav ul {
+ display:flex;
+ list-style: none;
+ justify-content: space-between;
+ padding:0;
+}
+
+nav ul div:last-child{
+  display: flex;
+  flex:1;
+  justify-content: flex-end;
+
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+nav ul li {
+  margin-right:20px;
+  
+}
+nav li a {
+  padding:0.5em;
+}
+nav .active {
+  border-bottom:1px solid lightblue
+}
+
+.player-panels {
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  margin-top:1em;
+  width:150px;
+  border-radius: 50%;
+}
+
+.filters {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.filters li {
+  margin: 0 1em;
+  cursor: pointer;
+}
+.filters .selected {
+  font-weight:bold;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid>div {
+  margin:1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+.grid>div>h4 a {
+  color: brown;
+
+}
+
+h1,h2,h3,h4 {
+  text-align:center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color : inherit;
+}
+
+body {
+  color:black;
+}
+
+button {
+  padding: 8px 25px;
+  border:none;
+  font-size:1em;
+  margin:1em;
+  display: block;
+  color:white;
+  background: black;
+  border-radius: 0.6em;
+}
+
+input{
+  padding:1em;
+}
+
+.search-player {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.search-player form {
+  display: flex;
+  flex-direction: column;
+}
+.loader{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background: rgba(32, 32, 32, 0.89);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+@media (max-width:500px) {
+  .grid>div {
+    width:40%;
+  }
+}
